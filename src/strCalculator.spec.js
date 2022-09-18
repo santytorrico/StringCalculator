@@ -5,4 +5,10 @@ describe("Add strings", () => {
       const result= addstrings("");
       expect(result).toEqual(0);
     });
+
+    it("Should return the input string number", () => {
+        const result= addstrings("4");
+        expect(result).toEqual(4);
+      });
+
   });

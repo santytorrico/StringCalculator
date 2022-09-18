@@ -1,4 +1,7 @@
-function addStrings(){
-    return 0;
+function addstrings(str){
+    if (str==""){
+        return 0;
+    }
+    return parseInt(str);
 }
- export default addStrings;
+ export default addstrings;
