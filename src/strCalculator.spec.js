@@ -22,7 +22,16 @@ describe("Add strings", () => {
     });
 
     it("Should return the addition of numbers from the string even when we have multiple characters", () => {
-      const result= addstrings("4,8,12-24");
+      const result= addstrings("4,8-12:24");
       expect(result).toEqual(48);
+    });
+
+    it("Should return the addition of numbers from the string even when we have multiple characters", () => {
+      const result= addstrings("4,8-12:24");
+      expect(result).toEqual(48);
+    });
+    it("Should return the addition of numbers from the string even when we have multiple characters", () => {
+      const result= addstrings("4,1000-12:24");
+      expect(result).toEqual(40);
     });
   });

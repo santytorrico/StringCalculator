@@ -17,7 +17,9 @@ function findSum(str)
         if (!isNaN(String(ch) * 1))
             temp += ch;
         else {
-            sum += parseInt(temp);
+            if (parseInt(temp)<1000){
+                sum += parseInt(temp);
+            }
             temp = "0";
         }
     }
